@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendamento de Corte de Cabelo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Agende seu horário</h1>
+      <p>Atendimento de segunda a sábado, das 08:30 às 18:00</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="form">
+        <div class="field">
+          <label for="nome">Seu nome</label>
+          <input id="nome" type="text" placeholder="Digite seu nome" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="data">Escolha a data</label>
+          <input id="data" type="date">
+          <small class="hint">Domingos indisponíveis</small>
+        </div>
+        <div class="field">
+          <label for="observacoes">Observações (opcional)</label>
+          <textarea id="observacoes" rows="2" placeholder="Ex: corte degrade, barba, etc."></textarea>
+        </div>
+      </div>
+      <div class="slots">
+        <div class="slots-header">
+          <h2>Horários disponíveis</h2>
+          <button id="hojeBtn" class="ghost">Hoje</button>
+        </div>
+        <div id="listaHorarios" class="grid"></div>
+        <div id="semHorarios" class="empty" hidden>
+          Nenhum horário disponível para esta data.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>Barbearia Barbosa • Agendamentos via WhatsApp</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
