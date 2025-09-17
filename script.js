@@ -2,7 +2,7 @@
   "use strict";
 
   // CONFIGURE AQUI O NÚMERO DO WHATSAPP (somente dígitos, com DDI/DDD). Ex: Brasil (11) -> 5511999999999
-  const WHATSAPP_NUMBER = "xxxxxxxxxxxxx"; // <-- troque pelo seu número
+  const WHATSAPP_NUMBER = "5588982179629"; // <-- troque pelo seu número
 
   const OPEN_HOUR = 8;   // 08:00 base
   const OPEN_MIN = 30;   // começa às 08:30
